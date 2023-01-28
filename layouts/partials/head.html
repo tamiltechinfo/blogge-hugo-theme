@@ -11,8 +11,7 @@
   <meta name="author" content="{{ . }}">
   {{ end }}
   {{ partial "google/ads" . }}
-  {{ template "_internal/google_analytics.html" . }}
-  {{ template "_internal/google_analytics_async.html" . }}
+  {{ partial "google/analytics" . }}
   {{ hugo.Generator }}
 
   <link rel="stylesheet" href={{ "plugins/font-awesome/css/font-awesome.min.css" | absURL }} />
