@@ -2,10 +2,13 @@
   <meta charset="utf-8" />
   <title>{{ .Title }}</title>
 
+ 
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="title" content="SONG LYRICS COLLECTION IN TAMIL: Paadal Varigal,பாடல் வரிகள், A to Z Song Lyrics" />
-  <meta name="description" content="Song Lyrics in Tamil 2023: Enjoy all the latest tamil movie song lyrics in tamil as well as english.திரைப்பட பாடல் வரிகள் தமிழ், Learn tamil song lyrics of your Favorite tamil songs" />
+  <meta name="title" content="{{ .Site.Params.Title }}" />
+  <meta name="description" content="{{ .Site.Params.Description }}" />
+ 
   {{ partial "google/analytics" . }}
   {{ with .Site.Params.author }}
   <meta name="author" content="{{ . }}">
