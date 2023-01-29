@@ -31,7 +31,7 @@
         <article class="single-blog">
           <a href={{ printf "tags/%s" .Params.tags | absURL }} class="tag">{{ .Params.tags }}</a>
           <p class="title">{{ .Title }}</p>
-          <meta name="description" content="{{ .Params.Description }}" />
+          
           <ul class="meta">
             <li>
               By <a href={{ "about" | absURL }}>{{ $.Site.Params.author }}</a>
