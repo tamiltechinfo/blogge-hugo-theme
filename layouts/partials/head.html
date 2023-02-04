@@ -1,8 +1,9 @@
 <head>
   <meta charset="utf-8" />
-  <title>{{ .Title }}</title>
-  <meta name="description" content="{{ .Description | default .Site.Params.SiteDescription }}" />
   
+  <title>{{ with .Params.seotitle }}{{.}}{{else}}{{.Title}}{{end}} </title>
+  <meta name="description" content="{{ .Description | default .Site.Params.SiteDescription }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
